@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/res/maven/tomcat.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-api.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-dbcp.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-jdbc.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-juli.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-util.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-coyote.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-el-api.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-jasper.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-tribes.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-i18n-es.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-i18n-fr.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-i18n-ja.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-jsp-api.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-catalina.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-embed-el.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-jasper-el.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-embed-core.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat7-websocket.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-catalina-ha.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-catalina-ws.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-extras-juli.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-servlet-api.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-catalina-ant.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-embed-jasper.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-websocket-api.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-annotations-api.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat7-embed-websocket.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-embed-logging-juli.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-catalina-jmx-remote.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-embed-logging-log4j.pom" />
+        <option value="$PROJECT_DIR$/res/maven/tomcat-extras-juli-adapters.pom" />
+        <option value="$PROJECT_DIR$/modules/jdbc-pool/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

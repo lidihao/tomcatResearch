@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jdbc-pool" />
+        <module name="tomcat-annotations-api" />
+        <module name="tomcat-api" />
+        <module name="tomcat-catalina" />
+        <module name="tomcat-catalina-ant" />
+        <module name="tomcat-catalina-ha" />
+        <module name="tomcat-catalina-jmx-remote" />
+        <module name="tomcat-catalina-ws" />
+        <module name="tomcat-coyote" />
+        <module name="tomcat-dbcp" />
+        <module name="tomcat-el-api" />
+        <module name="tomcat-embed-core" />
+        <module name="tomcat-embed-el" />
+        <module name="tomcat-embed-jasper" />
+        <module name="tomcat-embed-logging-juli" />
+        <module name="tomcat-embed-logging-log4j" />
+        <module name="tomcat-embed-websocket" />
+        <module name="tomcat-extras-juli" />
+        <module name="tomcat-extras-juli-adapters" />
+        <module name="tomcat-i18n-es" />
+        <module name="tomcat-i18n-fr" />
+        <module name="tomcat-i18n-ja" />
+        <module name="tomcat-jasper" />
+        <module name="tomcat-jasper-el" />
+        <module name="tomcat-jdbc" />
+        <module name="tomcat-jsp-api" />
+        <module name="tomcat-juli" />
+        <module name="tomcat-servlet-api" />
+        <module name="tomcat-tribes" />
+        <module name="tomcat-util" />
+        <module name="tomcat-websocket-api" />
+        <module name="tomcat7-websocket" />
+        <module name="Tomcat7.0" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
