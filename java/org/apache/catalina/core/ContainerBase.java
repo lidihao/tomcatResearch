@@ -1210,7 +1210,7 @@ public abstract class ContainerBase extends LifecycleMBeanBase
      */
     @Override
     protected synchronized void startInternal() throws LifecycleException {
-
+        //启动所有组件和子容器
         // Start our subordinate components, if any
         Loader loader = getLoaderInternal();
         if ((loader != null) && (loader instanceof Lifecycle))

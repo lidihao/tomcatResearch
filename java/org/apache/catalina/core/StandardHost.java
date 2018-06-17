@@ -632,7 +632,7 @@ public class StandardHost extends ContainerBase implements Host {
             aliases = newAliases;
         }
         // Inform interested listeners
-        fireContainerEvent(ADD_ALIAS_EVENT, alias);
+        fireContainerEvent(ADD_ALIAS_EVENT, alias);//MapListener会监听该事件，发布的时候Map会添加别名
 
     }
 
@@ -797,6 +797,7 @@ public class StandardHost extends ContainerBase implements Host {
         // Set error report valve
         String errorValve = getErrorReportValveClass();
         if ((errorValve != null) && (!errorValve.equals(""))) {
+            //如果erroVale的类不为null,添加erroVale
             try {
                 boolean found = false;
                 Valve[] valves = getPipeline().getValves();
