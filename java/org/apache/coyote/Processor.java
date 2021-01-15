@@ -28,15 +28,20 @@ import org.apache.tomcat.util.net.SocketWrapper;
 
 
 /**
+ * 协议的处理器
  * Common interface for processors of all protocols.
  */
 public interface Processor<S> {
+    // 获取线程池
     Executor getExecutor();
 
+    // 处理请求
     SocketState process(SocketWrapper<S> socketWrapper) throws IOException;
 
+    // comet 服务器推送技术
     SocketState event(SocketStatus status) throws IOException;
 
+    // 处理异步请求
     SocketState asyncDispatch(SocketStatus status);
     SocketState asyncPostProcess();
 
@@ -51,18 +56,25 @@ public interface Processor<S> {
     @Deprecated
     SocketState upgradeDispatch() throws IOException;
 
+    // 处理http升级的请求, websocket
     HttpUpgradeHandler getHttpUpgradeHandler();
     SocketState upgradeDispatch(SocketStatus status) throws IOException;
     
     void errorDispatch();
 
+    // 是否是comet请求
     boolean isComet();
+    // 是否异步请求
     boolean isAsync();
+    // 是否升级
     boolean isUpgrade();
 
+    // http请求
     Request getRequest();
 
+    // 回收该处理器
     void recycle(boolean socketClosing);
 
+    // 支持https
     void setSslSupport(SSLSupport sslSupport);
 }

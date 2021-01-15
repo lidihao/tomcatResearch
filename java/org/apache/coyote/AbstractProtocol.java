@@ -79,6 +79,7 @@ public abstract class AbstractProtocol<S> implements ProtocolHandler,
 
 
     /**
+     * 负责最底层的IO
      * Endpoint that provides low-level network I/O - must be matched to the
      * ProtocolHandler implementation (ProtocolHandler using BIO, requires BIO
      * Endpoint etc.).
@@ -119,6 +120,7 @@ public abstract class AbstractProtocol<S> implements ProtocolHandler,
     // ------------------------------- Properties managed by the ProtocolHandler
 
     /**
+     * 将ProtocolHandler与Connector适配
      * The adapter provides the link between the ProtocolHandler and the
      * connector.
      */
@@ -129,7 +131,7 @@ public abstract class AbstractProtocol<S> implements ProtocolHandler,
     public Adapter getAdapter() { return adapter; }
 
 
-    /**
+    /**处理器的缓存
      * The maximum number of idle processors that will be retained in the cache
      * and re-used with a subsequent request. The default is 200. A value of -1
      * means unlimited. In the unlimited case, the theoretical maximum number of
@@ -408,6 +410,7 @@ public abstract class AbstractProtocol<S> implements ProtocolHandler,
     // ------------------------------------------------------- Lifecycle methods
 
     /*
+    初始化EndPoint
      * NOTE: There is no maintenance of state or checking for valid transitions
      * within this class. It is expected that the connector will maintain state
      * and prevent invalid state transitions.
@@ -457,7 +460,7 @@ public abstract class AbstractProtocol<S> implements ProtocolHandler,
         }
     }
 
-
+    // 启动EndPoint
     @Override
     public void start() throws Exception {
         if (getLog().isInfoEnabled())

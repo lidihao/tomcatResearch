@@ -80,17 +80,25 @@ public final class Request {
 
 
     private int serverPort = -1;
+    // 服务器名
     private MessageBytes serverNameMB = MessageBytes.newInstance();
 
+    // 远程端口
     private int remotePort;
+    // 本地端口
     private int localPort;
 
+    // 协议
     private MessageBytes schemeMB = MessageBytes.newInstance();
 
+    // 方法
     private MessageBytes methodMB = MessageBytes.newInstance();
     private MessageBytes unparsedURIMB = MessageBytes.newInstance();
+    // url
     private MessageBytes uriMB = MessageBytes.newInstance();
+    // 解码的url
     private MessageBytes decodedUriMB = MessageBytes.newInstance();
+    // 查询
     private MessageBytes queryMB = MessageBytes.newInstance();
     private MessageBytes protoMB = MessageBytes.newInstance();
 
@@ -99,7 +107,8 @@ public final class Request {
     private MessageBytes localNameMB = MessageBytes.newInstance();
     private MessageBytes remoteHostMB = MessageBytes.newInstance();
     private MessageBytes localAddrMB = MessageBytes.newInstance();
-     
+
+    // header
     private MimeHeaders headers = new MimeHeaders();
 
     private MessageBytes instanceId = MessageBytes.newInstance();
@@ -111,6 +120,7 @@ public final class Request {
 
 
     /**
+     *
      * Associated input buffer.
      */
     private InputBuffer inputBuffer = null;
@@ -119,6 +129,7 @@ public final class Request {
     /**
      * URL decoder.
      */
+    // url解码器
     private UDecoder urlDecoder = new UDecoder();
 
 
